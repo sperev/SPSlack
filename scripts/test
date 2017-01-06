@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "## go to $1"
+cd $1
+echo "## building project"
+swift build --clean
+swift build
+echo "## testing project"
+swift test
+echo "## finished"
